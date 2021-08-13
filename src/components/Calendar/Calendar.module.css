@@ -1,0 +1,108 @@
+.topPanel {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 35px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.controls {
+    display: flex;
+    align-items: center;
+    width: 48px;
+    justify-content: space-between;
+}
+
+.controlBtn {
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: #e4dbfa;
+    background-repeat: no-repeat;
+    background-size: 10px;
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-position: center;
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+}
+
+.today {
+    background-color: #896cec;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+.dayActive {
+    background-color: #43ff72;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+.controlBtn:hover {
+    background-color: #cecae0;
+}
+
+.controlBtnNext {
+    background-image: url("./../../img/next.svg");
+}
+
+.controlBtnBack {
+    background-image: url("./../../img/previous.svg");
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    text-align: center;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.greyFont {
+    color: #c7c7c7;
+}
+
+.even:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+    height: 420px;
+    background-color: #9a87db;
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(121, 121, 121, 0.1) 50%, rgba(255,255,255,1) 100%);
+}
+
+.dayItem {
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+}
+
+.dayItem:hover {
+    background-color: #c9ffdc;
+    color: #000000;
+    font-weight: bold;
+}
+
+
+.calendarItem {
+    position: relative;
+    padding: 10px;
+    display: flex;
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    z-index: 1;
+}

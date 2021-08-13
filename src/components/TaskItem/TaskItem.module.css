@@ -1,0 +1,53 @@
+.taskItem {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    align-items: center;
+    margin-left: 20px;
+    border-radius: 20px;
+    flex: 1;
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+    transform: scale(1);
+}
+
+.taskItem:hover {
+    transform: scale(1.05);
+}
+
+.containerActive {
+    background: rgba(0, 255, 93, 0.6);
+}
+
+.containerinactive {
+    background: rgba(76, 76, 76, 0.37);
+}
+
+.status {
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+    background-size: 10px;
+    background-position: center;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.active {
+    background-color: #896cec;
+    background-image: url("./../../img/check.svg");
+}
+
+.inactive {
+    background-color: #896cec;
+    background-image: url("./../../img/cancel.svg");
+}
+
+.title {
+    flex: 1;
+}
+
+.description {
+    flex: 1 1 100%;
+    padding: 20px 50px;
+}

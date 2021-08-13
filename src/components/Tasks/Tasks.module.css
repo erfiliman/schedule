@@ -1,0 +1,36 @@
+.tasks {
+    flex: 1;
+    background-color: #f5f4f9;
+    margin: 10px;
+    padding: 40px;
+    border-radius: 10px;
+    overflow: auto;
+}
+
+.timeItem {
+    min-height: 100px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    color: #4c4c4c;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.tasksNotEmpty:hover:after {
+    content: "Добавить задачу";
+    display: flex;
+    justify-content: center;
+    line-height: 30px;
+    font-weight: bold;
+    color: #FFFFFF;
+    align-items: center;
+    padding: 20px;
+    background-color: #ff8543;
+    align-items: center;
+    margin-left: 20px;
+    border-radius: 20px;
+    flex: 1;
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+    transform: scale(1);
+}
